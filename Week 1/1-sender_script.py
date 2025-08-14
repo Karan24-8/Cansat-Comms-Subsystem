@@ -3,7 +3,6 @@
 import serial
 import time
 
-#Use one end of the virtual COM pair.
 ser = serial.Serial('COM9', 9600)
 
 try:
@@ -17,4 +16,4 @@ except KeyboardInterrupt:
   print("Sender stopped.")
 
 
-#This script will send, "Hello, Cansat!" every second to COM3 (simulating ESP32)
+#This script will send, "Hello, Cansat!" every second to COM10 (simulating ESP32)
