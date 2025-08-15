@@ -23,7 +23,7 @@ print("Started logging data to cansatdata.csv...")
 while True:
   if ser.in_waiting > 0:
     line = ser.readline().decode().strip()
-    if line.isdigit():           #Ensuring the dat is numeric.
+    if line.isdigit():           #Ensuring the data is numeric.
       timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')         #Formatting the timestamp.
       print(f"[{timestamp}] Received: {line}")           #Console's output.
 
