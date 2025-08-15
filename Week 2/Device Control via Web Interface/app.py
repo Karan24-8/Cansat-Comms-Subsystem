@@ -4,7 +4,7 @@ import time
 
 app = Flask(__name__)
 
-# Connect to COM5 (Flask side)
+# Connect to COM11 (Flask side)
 ser = serial.Serial('COM11', 9600, timeout=1)
 
 HTML_PAGE = """
@@ -44,7 +44,7 @@ def control():
         else:
             status = "No response from simulator"
 
-    return render_template_string(HTML_PAGE, status=status)
+        return render_template_string(HTML_PAGE, status=status)
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader = False)

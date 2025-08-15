@@ -37,9 +37,7 @@ def index():
         <title>Live Temperature</title>
         <script>
             function fetchData() {
-                fetch('/get_data')
-                .then(response => response.json())
-                .then(data => {
+                fetch('/get_data').then(response => response.json()).then(data => {
                     document.getElementById('temp').innerText = data.temperature;
                 });
             }

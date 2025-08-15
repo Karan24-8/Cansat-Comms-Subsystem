@@ -18,8 +18,8 @@ def read_serial():
             if "," in line:
                 try:
                     lat_str, lon_str = line.split(",")
-                    latest_coords["lat"] = float(lat_str)
-                    latest_coords["lon"] = float(lon_str)
+                    latest_coords["lat"] = float(lat_str) #Parsing
+                    latest_coords["lon"] = float(lon_str) #Parsing
                     print(f"Updated coords: {latest_coords}")
                 except ValueError:
                     print(f"Invalid line: {line}")
@@ -59,7 +59,7 @@ HTML_PAGE = """
           title: "ESP32 Location"
         });
 
-        setInterval(updateMarker, 3000); // update every 3 sec
+        setInterval(updateMarker, 5000); // update every 5 sec
       }
     </script>
   </head>

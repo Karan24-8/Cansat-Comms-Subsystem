@@ -1,6 +1,6 @@
 import serial
 
-ser = serial.Serial('COM12', 9600)  # Use COM6 for simulator
+ser = serial.Serial('COM12', 9600)  # Use COM12 for simulator
 
 print("ESP32 Simulator is running...")
 
