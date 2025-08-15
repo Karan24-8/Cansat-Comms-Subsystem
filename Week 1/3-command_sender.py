@@ -1,9 +1,9 @@
 import serial
 
-#Connecting Python script to port COM10.
-ser = serial.Serial('COM10', 9600, timeout=1)
+#Connecting Python script to port COM12
+ser = serial.Serial('COM12', 9600, timeout=1)
 
-print("Command sender connected to COM10")
+print("Command sender connected to COM12")
 
 while True:
   user_input = input("Enter command (ON/OFF): ").strip().upper()
